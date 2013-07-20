@@ -1,0 +1,31 @@
+{
+  "builders": [
+    {
+      "type": "vmware",
+      "iso_url": "http://omnios.omniti.com/media/OmniOS_Text_r151006l.iso",
+      "iso_checksum": "a5290c784810ed1204536de2c92b7949"
+      "iso_checksum_type": "md5",
+      "ssh_username": "vagrant",
+      "boot_wait": "30s",
+      "boot_command": [
+        "<enter><wait10><wait5>",
+        "<enter><wait10>",
+        "<f2>",
+        "<wait10><wait10><wait10><wait10><wait10><wait10>",
+        "<wait10><wait10><wait10><wait10><wait10><wait10>",
+        "<wait10>",
+        "<f2><wait>",
+        "<f2><wait>",
+        "<backspace><backspace><backspace><backspace><backspace><backspace><backspace>",
+        "vagrant<f2><wait>",
+        "<f2><wait>",
+        "<f2><wait>",
+        "<wait10><wait10><wait10><wait10><wait10><wait10>",
+        "<wait10><wait10><wait10><wait10><wait10><wait10>"
+      ],
+      "floppy_files": [
+        "files/no_pong.txt"
+      ]
+    }
+  ]
+}

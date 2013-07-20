@@ -1,0 +1,4 @@
+OmniOS needs a floppy attached to install in VMWare, but attaching a 0-byte
+floppy in VMWare Fusion triggers the Pong Easter Egg.
+
+More info: http://omnios.omniti.com/wiki.php/VMwareNotes
