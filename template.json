@@ -5,6 +5,7 @@
       "scripts": [
         "scripts/dns.sh",
         "scripts/grub_timeout.sh",
+        "scripts/hostname.sh",
         "scripts/sshd_config.sh",
         "scripts/vagrant.sh",
         "scripts/zero_disk.sh"
