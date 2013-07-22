@@ -3,7 +3,11 @@
     {
       "type": "shell",
       "scripts": [
-        "scripts/dns.sh"
+        "scripts/dns.sh",
+        "scripts/grub_timeout.sh",
+        "scripts/sshd_config.sh",
+        "scripts/vagrant.sh",
+        "scripts/zero_disk.sh"
       ]
     }
   ],
@@ -41,14 +45,24 @@
         "vagrant<enter><wait>",
         "sed -i 's/PermitRootLogin no/PermitRootLogin yes/' /etc/ssh/sshd_config<enter><wait>",
         "svcadm enable ssh<enter><wait>",
-        "svcadm refresh ssh<enter>"
+        "svcadm refresh ssh<enter><wait>",
+        "useradd -s /usr/bin/bash -m -d /export/home/vagrant vagrant<enter><wait5>",
+        "passwd vagrant<enter><wait5>",
+        "vagrant<enter><wait5>",
+        "vagrant<enter>"
       ],
       "floppy_files": [
         "files/no_pong.txt"
       ],
       "vmx_data": {
-        "memsize": "2048"
+        "memsize": "2048",
+        "ethernet0.virtualDev": "e1000"
       }
+    }
+  ],
+  "post-processors": [
+    {
+      "type": "vagrant"
     }
   ]
 }
