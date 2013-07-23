@@ -67,6 +67,7 @@
   "post-processors": [
     {
       "type": "vagrant",
+      "output": "omnios_{{.Provider}}.box",
       "vagrantfile_template": "files/Vagrantfile.template"
     }
   ]
