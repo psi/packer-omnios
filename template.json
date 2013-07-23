@@ -18,7 +18,7 @@
   "builders": [
     {
       "type": "vmware",
-      "guest_os_type": "solaris11-64",
+      "guest_os_type": "solaris10-64",
       "iso_url": "http://omnios.omniti.com/media/OmniOS_Text_r151006l.iso",
       "iso_checksum": "a5290c784810ed1204536de2c92b7949",
       "iso_checksum_type": "md5",
