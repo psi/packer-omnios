@@ -3,6 +3,7 @@
     {
       "type": "shell",
       "scripts": [
+        "scripts/auto_home.sh",
         "scripts/dns.sh",
         "scripts/grub_timeout.sh",
         "scripts/hostname.sh",
