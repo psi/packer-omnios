@@ -9,6 +9,7 @@
         "scripts/hostname.sh",
         "scripts/sshd_config.sh",
         "scripts/vagrant.sh",
+        "scripts/vmware_tools.sh",
         "scripts/zero_disk.sh"
       ]
     }
@@ -56,6 +57,7 @@
       "floppy_files": [
         "files/no_pong.txt"
       ],
+      "tools_upload_flavor": "solaris",
       "vmx_data": {
         "memsize": "2048",
         "ethernet0.virtualDev": "e1000"
