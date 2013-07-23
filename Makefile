@@ -6,3 +6,8 @@ all:
 
 vmware:
 	packer build -only=vmware template.json
+
+add-vmware:
+	(vagrant box list | egrep -q 'omnios\s+\(vmware_desktop\)' && \
+		vagrant box remove omnios vmware_desktop) || true
+	vagrant box add omnios omnios_vmware.box
