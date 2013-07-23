@@ -9,7 +9,6 @@
         "scripts/hostname.sh",
         "scripts/sshd_config.sh",
         "scripts/vagrant.sh",
-        "scripts/vmware_tools.sh",
         "scripts/zero_disk.sh"
       ]
     }
