@@ -1,6 +1,7 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "omnios"
 
+  # Need to disable shared folders until I get VMWare tools working
   config.vm.synced_folder ".", "/vagrant", disabled: true
 
   config.vm.provider :vmware_fusion do |v|
