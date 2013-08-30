@@ -5,11 +5,6 @@ Currently, only VMWare boxes are built.
 
 ## Building a box
 
-### Note
- > The OmniOS installer makes judicious use of the F2 key, which Packer 0.2.0
- > can't send. Until the next release, you'll need to [build Packer][2] from
- > source, and make sure it is first in your `PATH`, to use this template.
-
 1. Clone the repository.
 
    ```
